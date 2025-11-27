@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Predição de Preço do Petróleo – ARIMA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Predição de Preços do Petróleo</h1>
+        <p class="subtitulo">Modelo ARIMA aplicado para prever valores futuros</p>
+    </header>
+
+    <section class="container">
+
+        <div class="card">
+            <h2>📌 Objetivo do Trabalho</h2>
+            <p>
+                Este projeto tem como objetivo aplicar técnicas de séries temporais 
+                para analisar o comportamento histórico da cotação do petróleo e gerar 
+                previsões futuras utilizando o modelo estatístico <b>ARIMA</b>.  
+                O estudo busca demonstrar a aplicação prática de modelos preditivos 
+                para auxiliar na compreensão de tendências e possíveis cenários para os próximos meses.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>📈 Série Temporal e Predição</h2>
+
+            <img src="resultados/grafico_predicao.png" class="grafico" alt="Gráfico de previsão ARIMA">
+
+            <p>
+                O gráfico acima exibe a série histórica (linha azul), o ajuste do modelo ARIMA (vermelho)
+                e as previsões dos próximos meses (linha preta).  
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>📊 Forecast dos Próximos 6 Meses</h2>
+
+            <table id="forecast-tabela">
+                <thead>
+                    <tr>
+                        <th>Mês</th>
+                        <th>Previsão (US$)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <!-- A tabela é preenchida dinamicamente -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
